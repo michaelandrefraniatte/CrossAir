@@ -70,6 +70,8 @@ namespace CrossAir
             valchanged(1, GetAsyncKeyState(Keys.PageDown));
             if (wd[1] == 1)
             {
+                this.Size = new Size(picwidth, picheight);
+                this.Location = new Point(width / 2 - picwidth / 2, height / 2 - picheight / 2);
                 this.TopMost = true;
             }
         }
