@@ -1,0 +1,11 @@
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\bin\Release\CrossAir.exe.config
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\bin\Release\CrossAir.exe
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\bin\Release\CrossAir.pdb
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.Form1.resources
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.Properties.Resources.resources
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.csproj.GenerateResource.cache
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.exe
+C:\Users\micha\Documents\tool\CrossAir\CrossAir\CrossAir\obj\Release\CrossAir.pdb
