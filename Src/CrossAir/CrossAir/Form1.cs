@@ -53,7 +53,14 @@ namespace CrossAir
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-            picture = new Bitmap("crossair.png");
+            try
+            {
+                picture = new Bitmap("crossair.png");
+            }
+            catch
+            {
+                picture = new Bitmap("crossair.gif");
+            }
             picwidth = picture.Width;
             picheight = picture.Height;
             this.Size = new Size(picwidth, picheight);
