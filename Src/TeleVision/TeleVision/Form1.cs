@@ -90,15 +90,6 @@ namespace TeleVision
             webView21.DefaultBackgroundColor = Color.Transparent;
             this.pictureBox1.Controls.Add(webView21);
         }
-        public Bitmap ResizeBitmap(Bitmap bmp, int width, int height)
-        {
-            Bitmap result = new Bitmap(width, height);
-            using (Graphics g = Graphics.FromImage(result))
-            {
-                g.DrawImage(bmp, 0, 0, width, height);
-            }
-            return result;
-        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             valchanged(0, GetAsyncKeyState(Keys.PageUp));
@@ -139,22 +130,6 @@ namespace TeleVision
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-        }
-        private void Form1_Deactivate(object sender, EventArgs e)
-        {
-            var borderHeight = this.Bounds.Height - this.ClientRectangle.Height;
-            this.FormBorderStyle = FormBorderStyle.None;
-        }
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            if (this.FormBorderStyle == FormBorderStyle.FixedToolWindow)
-                return;
-            if (x != 0 & y != 0)
-            {
-                this.Left = x;
-                this.Top = y;
-            }
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
     }
 }

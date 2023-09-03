@@ -68,8 +68,6 @@
             this.Text = "CrossAir";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Magenta;
-            this.Activated += new System.EventHandler(this.Form1_Activated);
-            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
