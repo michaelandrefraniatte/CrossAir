@@ -21,6 +21,7 @@ namespace CrossAir
         [DllImport("user32.dll")]
         public static extern bool GetAsyncKeyState(System.Windows.Forms.Keys vKey);
         public Bitmap picture;
+        public static int x, y;
         private static int width = Screen.PrimaryScreen.Bounds.Width;
         private static int height = Screen.PrimaryScreen.Bounds.Height;
         private static int picwidth = Screen.PrimaryScreen.Bounds.Width;
@@ -84,6 +85,22 @@ namespace CrossAir
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+        }
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            var borderHeight = this.Bounds.Height - this.ClientRectangle.Height;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            if (this.FormBorderStyle == FormBorderStyle.FixedToolWindow)
+                return;
+            if (x != 0 & y != 0)
+            {
+                this.Left = x;
+                this.Top = y;
+            }
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
     }
 }

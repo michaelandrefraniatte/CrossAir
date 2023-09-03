@@ -43,6 +43,7 @@ namespace TeleVision
         private const uint WS_TABSTOP = 0x00010000;
         private const uint WS_VISIBLE = 0x10000000;
         public Bitmap picture;
+        public static int x, y;
         private static int width = Screen.PrimaryScreen.Bounds.Width;
         private static int height = Screen.PrimaryScreen.Bounds.Height;
         public static int[] wd = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
@@ -136,6 +137,22 @@ namespace TeleVision
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+        }
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            var borderHeight = this.Bounds.Height - this.ClientRectangle.Height;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            if (this.FormBorderStyle == FormBorderStyle.FixedToolWindow)
+                return;
+            if (x != 0 & y != 0)
+            {
+                this.Left = x;
+                this.Top = y;
+            }
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
     }
 }
