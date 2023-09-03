@@ -9,3 +9,5 @@ C:\Users\micha\Documents\tool\TeleVision\TeleVision\obj\Release\TeleVision.cspro
 C:\Users\micha\Documents\tool\TeleVision\TeleVision\obj\Release\TeleVision.csproj.CoreCompileInputs.cache
 C:\Users\micha\Documents\tool\TeleVision\TeleVision\obj\Release\TeleVision.exe
 C:\Users\micha\Documents\tool\TeleVision\TeleVision\obj\Release\TeleVision.pdb
+C:\Users\micha\Documents\tool\TeleVision\TeleVision\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\tool\TeleVision\TeleVision\obj\Release\TeleVision.csproj.CopyComplete

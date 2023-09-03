@@ -8,6 +8,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.Core;
+using Newtonsoft.Json;
+using WebView2 = Microsoft.Web.WebView2.WinForms.WebView2;
 
 namespace TeleVision
 {
@@ -42,8 +45,8 @@ namespace TeleVision
         private const uint WS_POPUP = 0x80000000;
         private const uint WS_TABSTOP = 0x00010000;
         private const uint WS_VISIBLE = 0x10000000;
-        public Bitmap picture;
         public static int x, y;
+        public WebView2 webView21 = new WebView2();
         private static int width = Screen.PrimaryScreen.Bounds.Width;
         private static int height = Screen.PrimaryScreen.Bounds.Height;
         public static int[] wd = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
@@ -72,21 +75,20 @@ namespace TeleVision
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-        private void Form1_Shown(object sender, EventArgs e)
+        private async void Form1_Shown(object sender, EventArgs e)
         {
-            try
-            {
-                picture = new Bitmap("television.png");
-                picture = ResizeBitmap(picture, width, height);
-            }
-            catch
-            {
-                picture = new Bitmap("television.gif");
-            }
             this.Size = new Size(width, height);
             this.Location = new Point(0, 0);
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.Image = picture;
+            CoreWebView2EnvironmentOptions options = new CoreWebView2EnvironmentOptions("--disable-web-security", "--allow-file-access-from-files", "--allow-file-access");
+            CoreWebView2Environment environment = await CoreWebView2Environment.CreateAsync(null, null, options);
+            await webView21.EnsureCoreWebView2Async(environment);
+            webView21.CoreWebView2.SetVirtualHostNameToFolderMapping("appassets", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
+            webView21.CoreWebView2.Settings.AreDevToolsEnabled = false;
+            webView21.Source = new Uri("https://appassets/index.html");
+            webView21.Dock = DockStyle.Fill;
+            webView21.DefaultBackgroundColor = Color.Transparent;
+            this.pictureBox1.Controls.Add(webView21);
         }
         public Bitmap ResizeBitmap(Bitmap bmp, int width, int height)
         {

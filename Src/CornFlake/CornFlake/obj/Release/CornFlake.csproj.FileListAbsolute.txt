@@ -20,3 +20,5 @@ C:\Users\micha\Documents\tool\CornFlake\CornFlake\obj\Release\CornFlake.csproj.G
 C:\Users\micha\Documents\tool\CornFlake\CornFlake\obj\Release\CornFlake.csproj.CoreCompileInputs.cache
 C:\Users\micha\Documents\tool\CornFlake\CornFlake\obj\Release\CornFlake.exe
 C:\Users\micha\Documents\tool\CornFlake\CornFlake\obj\Release\CornFlake.pdb
+C:\Users\micha\Documents\tool\CornFlake\CornFlake\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\tool\CornFlake\CornFlake\obj\Release\CornFlake.csproj.CopyComplete

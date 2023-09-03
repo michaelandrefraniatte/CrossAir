@@ -9,6 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.Core;
+using Newtonsoft.Json;
+using WebView2 = Microsoft.Web.WebView2.WinForms.WebView2;
 
 namespace CrossAir
 {
@@ -20,8 +23,8 @@ namespace CrossAir
         }
         [DllImport("user32.dll")]
         public static extern bool GetAsyncKeyState(System.Windows.Forms.Keys vKey);
-        public Bitmap picture;
         public static int x, y;
+        public WebView2 webView21 = new WebView2();
         private static int width = Screen.PrimaryScreen.Bounds.Width;
         private static int height = Screen.PrimaryScreen.Bounds.Height;
         private static int picwidth = Screen.PrimaryScreen.Bounds.Width;
@@ -52,22 +55,22 @@ namespace CrossAir
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-        private void Form1_Shown(object sender, EventArgs e)
+        private async void Form1_Shown(object sender, EventArgs e)
         {
-            try
-            {
-                picture = new Bitmap("crossair.png");
-            }
-            catch
-            {
-                picture = new Bitmap("crossair.gif");
-            }
-            picwidth = picture.Width;
-            picheight = picture.Height;
+            picwidth = 128;
+            picheight = 128;
             this.Size = new Size(picwidth, picheight);
             this.Location = new Point(width / 2 - picwidth / 2, height / 2 - picheight / 2);
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.Image = picture;
+            CoreWebView2EnvironmentOptions options = new CoreWebView2EnvironmentOptions("--disable-web-security", "--allow-file-access-from-files", "--allow-file-access");
+            CoreWebView2Environment environment = await CoreWebView2Environment.CreateAsync(null, null, options);
+            await webView21.EnsureCoreWebView2Async(environment);
+            webView21.CoreWebView2.SetVirtualHostNameToFolderMapping("appassets", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
+            webView21.CoreWebView2.Settings.AreDevToolsEnabled = false;
+            webView21.Source = new Uri("https://appassets/index.html");
+            webView21.Dock = DockStyle.Fill;
+            webView21.DefaultBackgroundColor = Color.Transparent;
+            this.pictureBox1.Controls.Add(webView21);
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
