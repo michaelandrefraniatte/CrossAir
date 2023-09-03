@@ -66,6 +66,7 @@ namespace CrossAir
             picheight = picture.Height;
             this.Size = new Size(picwidth, picheight);
             this.Location = new Point(width / 2 - picwidth / 2, height / 2 - picheight / 2);
+            this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             this.pictureBox1.Image = picture;
         }
         private void timer1_Tick(object sender, EventArgs e)

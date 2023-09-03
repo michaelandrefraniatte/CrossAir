@@ -116,7 +116,7 @@ namespace TeleVision
                 WINDOW_NAME = GetActiveWindowTitle();
                 IntPtr window = FindWindowByCaption(IntPtr.Zero, WINDOW_NAME);
                 SetWindowLong(window, GWL_STYLE, WS_SYSMENU);
-                SetWindowPos(window, -2, width / 20, height / 10, width * 8 / 10, height * 8 / 10, 0x0040);
+                SetWindowPos(window, -2, width / 20, height / 10, width * 8 / 11, height * 8 / 10, 0x0040);
                 DrawMenuBar(window);
                 this.Size = new Size(width, height);
                 this.Location = new Point(0, 0);
