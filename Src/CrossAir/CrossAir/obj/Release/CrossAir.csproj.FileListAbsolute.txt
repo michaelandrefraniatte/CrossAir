@@ -33,3 +33,5 @@ C:\Users\micha\Documents\tool\CrossAir\CrossAir\obj\Release\CrossAir.exe
 C:\Users\micha\Documents\tool\CrossAir\CrossAir\obj\Release\CrossAir.pdb
 C:\Users\micha\Documents\tool\CrossAir\CrossAir\bin\Release\Newtonsoft.Json.xml
 C:\Users\micha\Documents\tool\CrossAir\CrossAir\obj\Release\CrossAir.csproj.CopyComplete
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.CopyComplete
