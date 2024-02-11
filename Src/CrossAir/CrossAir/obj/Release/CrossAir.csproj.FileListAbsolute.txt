@@ -13,7 +13,6 @@ C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Cross
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\CrossAir.exe
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\CrossAir.pdb
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.AssemblyReference.cache
-C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.SuggestedBindingRedirects.cache
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.Form1.resources
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.Properties.Resources.resources
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.GenerateResource.cache
