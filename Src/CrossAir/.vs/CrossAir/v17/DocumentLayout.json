@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F54E5AB8-EA2F-4085-BA12-0F949FAE5377}|CrossAir\\CrossAir.csproj|c:\\users\\micha\\documents\\github\\crossair\\src\\crossair\\crossair\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54E5AB8-EA2F-4085-BA12-0F949FAE5377}|CrossAir\\CrossAir.csproj|solutionrelative:crossair\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54E5AB8-EA2F-4085-BA12-0F949FAE5377}|CrossAir\\CrossAir.csproj|C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\crossair\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F54E5AB8-EA2F-4085-BA12-0F949FAE5377}|CrossAir\\CrossAir.csproj|solutionrelative:crossair\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\CrossAir\\Form1.cs",
+              "RelativeDocumentMoniker": "CrossAir\\Form1.cs",
+              "ToolTip": "C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\CrossAir\\Form1.cs",
+              "RelativeToolTip": "CrossAir\\Form1.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAowF8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T18:28:48.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\CrossAir\\Form1.cs",
+              "RelativeDocumentMoniker": "CrossAir\\Form1.cs",
+              "ToolTip": "C:\\Users\\micha\\Documents\\github\\CrossAir\\Src\\CrossAir\\CrossAir\\Form1.cs [Design]",
+              "RelativeToolTip": "CrossAir\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T18:28:40.34Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

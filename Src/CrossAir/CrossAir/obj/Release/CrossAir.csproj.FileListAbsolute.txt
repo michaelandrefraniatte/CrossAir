@@ -33,4 +33,13 @@ C:\Users\micha\Documents\tool\CrossAir\CrossAir\obj\Release\CrossAir.pdb
 C:\Users\micha\Documents\tool\CrossAir\CrossAir\bin\Release\Newtonsoft.Json.xml
 C:\Users\micha\Documents\tool\CrossAir\CrossAir\obj\Release\CrossAir.csproj.CopyComplete
 C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Newtonsoft.Json.xml
-C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.CopyComplete
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.Core.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.Core.xml
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\bin\Release\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\micha\Documents\github\CrossAir\Src\CrossAir\CrossAir\obj\Release\CrossAir.csproj.Up2Date
